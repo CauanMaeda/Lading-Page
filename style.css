@@ -1,0 +1,137 @@
+/* =========================================================
+   PALETA DE 5 CORES HARMONIOSAS (Variáveis CSS)
+   1. Cor Primária: #6C5CE7 (Roxo vibrante)
+   2. Cor Secundária: #8E44AD (Roxo escuro gradiente)
+   3. Cor de Fundo: #F4F6F9 (Cinza azulado claro)
+   4. Cor do Rodapé: #161B2E (Escuro/Navy)
+   5. Cor do Texto: #2D3748 (Cinza grafite)
+   ========================================================= */
+
+:root {
+  --cor-primaria: #6c5ce7;
+  --cor-secundaria: #8e44ad;
+  --cor-fundo: #f4f6f9;
+  --cor-rodape: #161b2e;
+  --cor-texto: #2d3748;
+  --cor-borda: #e2e8f0;
+  --cor-branca: #ffffff;
+  
+  /* GOOGLE FONTS */
+  --fonte-titulo: 'Poppins', sans-serif;
+  --fonte-corpo: 'Inter', sans-serif;
+}
+
+/* RESET E ESTILOS BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fonte-corpo);
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  line-height: 1.6;
+}
+
+/* =========================================================
+   CABEÇALHO / NAVBAR (Alinhamento Left / Right)
+   ========================================================= */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 8%;
+  background-color: var(--cor-branca);
+}
+
+.logo {
+  font-family: var(--fonte-titulo);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--cor-primaria);
+  text-align: left; /* Alinhado à Esquerda */
+}
+
+.nav-links {
+  text-align: right; /* Alinhado à Direita */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #4a5568;
+  margin-left: 2rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+/* Hover Effect nos links do menu */
+.nav-links a:hover {
+  color: var(--cor-primaria);
+}
+
+/* BANNER DE TOP-GRADIENTE */
+.top-banner {
+  height: 90px;
+  background: linear-gradient(135deg, var(--cor-primaria), var(--cor-secundaria));
+}
+
+/* =========================================================
+   SEÇÃO DO FORMULÁRIO (Alinhamentos Variados)
+   ========================================================= */
+.main-container {
+  display: flex;
+  justify-content: center;
+  padding: 0 1rem 4rem 1rem;
+  margin-top: -45px; /* Eleva o card para sobrepor o banner */
+}
+
+.form-card {
+  background-color: var(--cor-branca);
+  width: 100%;
+  max-width: 650px;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Cabeçalho do Card (Alinhamento ao Centro) */
+.form-header {
+  text-align: center; /* Alinhado ao Centro */
+  margin-bottom: 2rem;
+}
+
+.form-header h2 {
+  font-family: var(--fonte-titulo);
+  font-size: 1.75rem;
+  color: var(--cor-primaria);
+  margin-bottom: 0.5rem;
+}
+
+.form-header p {
+  color: #718096;
+  font-size: 0.9rem;
+}
+
+/* Campos do Formulário (Alinhamento à Esquerda) */
+.proposta-form {
+  text-align: left; /* Alinhado à Esquerda */
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.2rem;
+}
+
+.form-group label {
+  font-size: 0.85rem;
+  font-weight: 600;
